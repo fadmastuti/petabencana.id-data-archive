@@ -4,7 +4,7 @@ PetaBencana.id Data Archive
 Extracts from https://petabencana.id CogniCity database.
 
 ## Data
-#### floods
+### 1 Floods
 Flooded areas polygons, representing RW districts marked as flooded by BPBD DKI Jakarta using the PetaBencana.id Risk Evaluation Matrix.
 
 Reports are in GeoJSON format. Each GeoJSON feature represents a flooded area.
@@ -35,7 +35,7 @@ Data follows GeoJSON specification and coordinates are in WGS84 geographic coord
 **Geometry ID**
 Unique polygon identifier for RWs as created by Humanitarian Open Street Map Team
 
-#### reports
+### 2 Reports
 PetaBencana.id Flood Reports from the Jabodetabek Region of Indonesia in February 2017.
 
 Flood reports created by residents of the Jabodetabek mega-city conurbation (Jakarta, Indonesia) using the PetaBencana.id service and other local applications.
@@ -76,3 +76,13 @@ $ bash scripts/export-reports.sh 2017-02-21T00:00+0700 2017-02-21T23:59+0700 > 2
 ```
 
 The build-reports-data-february-2017.sh is a wrapper around this script for specific flood events.
+
+#### $ export-floods.sh
+
+Exports floods in PetaBencana.id database at a specific time as given in ISO 8601 timestamps with UTC offset. Example:
+
+```sh
+$ bash scripts/export-floods.sh 2017-02-21T00:00+0700
+```
+
+The build-floods-data-february-2017.sh is a wrapper around this script for specific flood events.
