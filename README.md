@@ -7,6 +7,32 @@ Extracts from https://petabencana.id CogniCity database.
 #### floods
 Flooded areas polygons, representing RW districts marked as flooded by BPBD DKI Jakarta using the PetaBencana.id Risk Evaluation Matrix.
 
+Reports are in GeoJSON format. Each GeoJSON feature represents a flooded area.
+
+**Report Attributes**
+|Attribute name|Description|Type|
+|--------------|-----------|----|
+|geom_id|Identifying number of local areas (RW, see below)|Integer|
+|changed|The time the area was marked as flooded|String|
+|state|The level of flooding (see below)|Integer|
+
+**State Attribute**
+|State|Severity|Description|
+|-----|--------|-----------|
+|1|Unknown|Unknown level of flooding - use caution|
+|2|Minor|Flooding between 10 and 70 cm|
+|3|Moderate|Flooding between 71 and 150 cm|
+|4|Severe|Flooding over 150 cm|
+
+**Time**
+All timestamps are UTC+7 offset for Jakarta.
+
+**Coordinate Reference System**
+Data follows GeoJSON specification and coordinates are in WGS84 geographic coordinate system.
+
+**Geometry ID**
+Unique polygon identifier for RWs as created by Humanitarian Open Street Map Team
+
 #### reports
 PetaBencana.id Flood Reports from the Jabodetabek Region of Indonesia in February 2017.
 

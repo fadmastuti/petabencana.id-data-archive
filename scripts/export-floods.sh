@@ -26,12 +26,12 @@ FROM (SELECT 'Feature' AS type, \
 				row_to_json( \
 					(SELECT l FROM \
 						(SELECT \
-            lg.local_area, \
+            lg.geom_id, \
 						lg.changed at time zone 'ICT' changed, \
 						lg.state) \
 					 AS l) \
 				 ) AS properties \
-				 FROM (SELECT local_area, changed, state, the_geom FROM \
+				 FROM (SELECT geom_id, changed, state, the_geom FROM \
          cognicity.rem_get_flood('$1'::timestamp with time zone) as floods, \
          cognicity.local_areas as rw WHERE floods.local_area = rw.pkey) AS lg \
 ) AS f)
