@@ -10,6 +10,7 @@ Flooded areas polygons, representing RW districts marked as flooded by BPBD DKI 
 Reports are in GeoJSON format. Each GeoJSON feature represents a flooded area.
 
 **Report Attributes**
+
 |Attribute name|Description|Type|
 |--------------|-----------|----|
 |geom_id|Identifying number of local areas (RW, see below)|Integer|
@@ -17,6 +18,7 @@ Reports are in GeoJSON format. Each GeoJSON feature represents a flooded area.
 |state|The level of flooding (see below)|Integer|
 
 **State Attribute**
+
 |State|Severity|Description|
 |-----|--------|-----------|
 |1|Unknown|Unknown level of flooding - use caution|
@@ -41,6 +43,7 @@ Flood reports created by residents of the Jabodetabek mega-city conurbation (Jak
 Reports are in GeoJSON format. Each GeoJSON feature represents an individual report.
 
 **Report Attributes**
+
 |Attribute name|Description|Type|
 |--------------|-----------|----|
 |created_at|Time that report was created as recorded by the user's device|String|
