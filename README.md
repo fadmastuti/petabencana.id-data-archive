@@ -45,3 +45,5 @@ Exports reports in PetaBencana.id database between start and end times given as 
 ```sh
 $ bash scripts/export-reports.sh 2017-02-21T00:00+0700 2017-02-21T23:59+0700 > 2017/floods/reports/petabencana.id_jbd_reports_2017-02-21.geojson
 ```
+
+The build-reports-data-february-2017.sh is a wrapper around this script for specific flood events.
