@@ -32,7 +32,6 @@ FROM (SELECT 'Feature' AS type, \
 						(SELECT \
 						lg.created_at at time zone 'ICT' created_at, \
 						lg.source, \
-						lg.status, \
 						lg.image_url, \
 						lg.title, \
             lg.report_data, \
